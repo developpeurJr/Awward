@@ -78,7 +78,7 @@ font-size: 20px;
     
 }
 .paralaxZone img{
- width: 650px;
+ width: 720px;
  height: 530px;
 
 }
@@ -104,3 +104,75 @@ font-size: 20px;
 }
 
 
+.containSwitch{
+    height: 100px;
+    overflow: hidden;
+}
+.a24 {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.a24::after {
+  content: "(A24)";
+  display: block;
+}
+
+.a24:hover {
+  transform: translateY(-110px); 
+}
+
+.amazon {
+  display: inline-block;
+  transition: transform 0.5s ease; 
+}
+
+.amazon::after {
+  content: "(Amazon)";
+  display: block;
+}
+
+.amazon:hover {
+  transform: translateY(-110px); 
+}
+
+.disney {
+  display: inline-block;
+  transition: transform 0.5s ease; 
+}
+
+.disney::after {
+  content: "(Disney)";
+  display: block;
+}
+
+.disney:hover {
+  transform: translateY(-110px); 
+}
+
+.fx {
+  display: inline-block;
+  transition: transform 0.5s ease; 
+}
+
+.fx::after {
+  content: "(Fx)";
+  display: block;
+}
+
+.fx:hover {
+  transform: translateY(-110px);
+}
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-110px);
+  }
+}
