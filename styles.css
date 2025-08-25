@@ -1,0 +1,400 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+      align-items: center;
+         position: fixed;
+         width: 100%;
+}
+.navbar h1{
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+.centernavbar{
+    display: flex;
+   align-items: center;
+
+}
+.centernavbar h1{
+    margin: 4px;
+}
+.leftTitle{
+    padding-left: 30px;
+}
+.rightTitle{
+    padding-right: 30px;
+}
+.centerPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titreWatson{
+display: flex;
+overflow: hidden;
+
+margin: 0;
+padding: 0;
+
+ 
+}
+.titreWatson p{
+
+  font-size: 210px;
+  margin: 0;
+  margin-top: 200px;
+
+  font-weight: bold;
+}
+.letterW{
+  
+  animation: slideAppear 1s;
+  
+}
+.letterA{
+  animation: slideAppear 1.1s;
+}
+.letterT{
+  animation: slideAppear 1.3s;
+}
+.letterS{
+  animation: slideAppear 1.4s;
+}
+.letterO{
+  animation: slideAppear 1.5s;
+}
+.letterN{
+  animation: slideAppear 1.6s;
+}
+.Textzonephrase{
+  font-size: 90px;
+  margin: 0;
+  font-family: "Merriweather";
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  padding: 0;
+
+
+}
+.TextzonephraseMore{
+  font-size: 20px;
+    font-family: "Merriweather";
+}
+.TextzonephraseMore span{
+font-family: Arial, Helvetica, sans-serif;
+}
+.zonephrase1, .zonephrase2, .zonephrase3, .zonephrase4,.zonephrase5,.zonephrase6,.zonephrase7  {
+  overflow: hidden;
+}
+.zonephrase1 p{
+animation: slideAppear 1.7s;
+}
+.zonephrase2 p{
+animation: slideAppear 1.8s;
+}
+.zonephrase3 p{
+animation: slideAppear 1.9s;
+}
+.zonephrase4 p{
+animation: slideAppear 2s;
+}
+.zonephrase5 p{
+animation: slideAppear 2.1s;
+}
+.zonephrase6 p{
+animation: slideAppear 2.2s;
+}
+.zonephrase7 p{
+animation: slideAppear 2.3s;
+}
+.zonephrase1 .Textzonephrase{
+text-decoration: none;
+overflow: hidden;
+
+
+}
+
+.zonephrase4 .Textzonephrase{
+text-decoration: none;
+}
+.zonephrase6 .Textzonephrase{
+text-decoration: none;
+}
+.losAngeles {
+   font-family: "Roboto", sans-serif;
+   font-weight: 300;
+}
+.cube1Image{
+  height: 105px;
+  width: 85px;
+  background-color: red;
+  animation: changeImage1 4s infinite;
+  background-size: cover;
+    margin-left: 12px;
+  margin-right: 12px;
+}
+.cube2Image{
+  height: 90px;
+  width: 120px;
+  background-color: red;
+  animation: changeImage2 4s infinite;
+  background-size: cover;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.zonephrase4{
+  display: flex;
+  align-items: center;
+}
+.zonephrase4 .Textzonephrase{
+  display: flex;
+
+}
+.zonephrase6 {
+  display: flex;
+
+}
+.zonephrase5 .Textzonephrase{
+  text-decoration: none;
+
+}
+.craft{
+    text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
+.footer1page{
+
+  display: flex;
+}
+.footer1pageLeft{
+  width: 40%;
+  padding-left: 30px;
+}
+.footer1pageLeft p{
+  font-size: 12px;
+  width: 140px
+}
+.zoneImagefooter1 {
+  height: 300px;
+  width: 220px;
+  opacity: 0;
+  /* animation: opacityAppear linear;
+  animation-timeline: view();
+animation-range: entry 0; */
+}
+
+.zoneImagefooter1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* remplissage sans déformation */
+}
+
+.footer2pageRight{
+  width: 60%;
+  display: flex;
+  font-size: 22px;
+
+}
+.textRight2{
+  width: 40%;
+  font-size: 20px;
+  margin: 9px;
+  overflow: hidden;
+  padding: 0;
+  
+}
+.textRight2 h1{
+  font-size: 20px;
+font-weight: normal;
+}
+
+
+.partner::after{
+  content: "";
+  display: block;
+background-color: black;
+width: 0%;
+
+transition: 0.25s ease-in-out;
+}
+.partner:hover::after{
+    content: "";
+  display: block;
+background-color: black;
+width: 100%;
+
+height: 1px;
+}
+.capabilitie::after{
+  content: "";
+  display: block;
+background-color: black;
+width: 0%;
+
+transition: 0.25s ease-in-out;
+}
+.capabilitie:hover::after{
+    content: "";
+  display: block;
+background-color: black;
+width: 100%;
+height: 1px;
+}
+.conversations::after{
+  content: "";
+  display: block;
+background-color: black;
+width: 0%;
+
+transition: 0.25s ease-in-out;
+}
+.conversations:hover::after{
+    content: "";
+  display: block;
+background-color: black;
+width: 100%;
+height: 1px;
+}
+
+.rightTitle::after{
+  content: "";
+  display: block;
+background-color: black;
+width: 0%;
+
+transition: 0.25s ease-in-out;
+}
+.rightTitle:hover::after{
+    content: "";
+  display: block;
+background-color: black;
+width: 100%;
+height: 1px;
+}
+
+.zonephrase2 .Textzonephrase{
+position: relative;
+
+}
+
+.zonephrase3 .Textzonephrase{
+position: relative;
+
+}
+
+.zonephrase3 .Textzonephrase::after{
+   content: "";
+  height: 3px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;                   /* colle la ligne sous le texte */
+  left: 0;                     /* démarre depuis la gauche */
+  width: 0%;
+}
+.zonephrase3 .Textzonephrase:hover::after{
+   content: "";
+  width: 100%;
+  height: 5px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+    position: absolute;
+  bottom: 10px;                   /* colle la ligne sous le texte */
+  left: 0;                     /* démarre depuis la gauche */
+  width: 100%;
+}
+
+.zonephrase2 .Textzonephrase::after{
+   content: "";
+  height: 3px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;                   /* colle la ligne sous le texte */
+  left: 0;                     /* démarre depuis la gauche */
+  width: 0%;
+}
+.zonephrase2 .Textzonephrase:hover::after{
+   content: "";
+  width: 100%;
+  height: 5px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  transition: 1s ease-in-out;
+    position: absolute;
+  bottom: 10px;                   /* colle la ligne sous le texte */
+  left: 0;                     /* démarre depuis la gauche */
+  width: 100%;
+}
+
+
+/* page2 */
+
+@keyframes changeImage1 {
+  0% {
+ background-image:url("images/image1awaard.png")
+
+  }
+    39% {
+ background-image:url("images/image1awaard.png")
+
+  }
+
+  40% {
+  background-image:url("images/image2awward.png");
+  }
+   75% {
+  background-image:url("images/image2awward.png");
+  }
+     76% {
+  background-image:url("images/image3awward.png");
+  }
+
+    100% {
+  background-image:url("images/image3awward.png");
+  }
+}
+
+@keyframes changeImage2 {
+  0% {
+ background-image:url("images/image4awward.png")
+
+  }
+    50% {
+ background-image:url("images/image4awward.png")
+
+  }
+    51% {
+ background-image:url("images/image5awward.png")
+
+  }
+
+    100% {
+  background-image:url("images/image5awward.png");
+  }
+}
+
+@keyframes slideAppear {
+  0% {
+transform: translateY(200px);
+
+  }
+
+    100% {
+transform: translateY(0px);
+  }
+}
+
+@keyframes opacityAppear {
+  0%{
+    opacity: 0;
+  }
+   100%{
+    opacity: 1;
+  }
+}
