@@ -1,57 +1,66 @@
-let amazon = document.querySelector('.amazon');
-let disney=document.querySelector('.disney')
-let fx=document.querySelector('.fx')
-console.log(amazon); // Vérifie que l'élément est bien trouvé
-let imageParalax=document.querySelector('.imageChange');
-console.log(imageParalax)
-// Ajout de l'événement hover
-amazon.addEventListener("mouseenter", () => {
-     imageParalax.src = "images/n4.png"; 
-});
-fx.addEventListener("mouseenter", () => {
-     imageParalax.src = "images/n8.png"; 
-});
-disney.addEventListener("mouseenter", () => {
-     imageParalax.src = "images/n5.png"; 
-});
 
-amazon.addEventListener("mouseleave", () => {
- imageParalax.src = "images/n3.png"; 
-});
-var observer = new IntersectionObserver((entrie)=>{
-    for(entry of entrie){
- 
-if(entry.isIntersecting&& entry.target.classList.contains("textRight2")){
+// Sélection des éléments
+const footerImage = document.querySelector('.zoneImagefooter1');
+const textopacity = document.querySelectorAll('.textRight2');
 
-entry.target.animate([
- {opacity:0},
- {opacity:1}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){ 
+            console.log("hello"); // affiché quand l'élément entre dans le viewport
 
-],{
-    duration:1000,
-      fill: "forwards"
-})
-}
-
- if(entry.isIntersecting&& entry.target.classList.contains("zoneImagefooter1")){
-
-entry.target.animate([
- {opacity:0},
- {opacity:1}
-
-],{
-    duration:1000,
-      fill: "forwards"
-})
-}
-    }
- 
-
+            // Animation de l'élément observé
+            entry.target.animate([
+                { opacity: 0 },
+                { opacity: 1 }
+            ], {
+                duration: 1000,
+                fill: "forwards"
+            });
+        }
+    });
 });
 
-let titreWatson=document.querySelector(".titreWatson")
-// let letterW=document.querySelector(".letterW")
-// letterW.style.transform="scale(2)";
+// Observer le footer
+if (footerImage) observer.observe(footerImage);
 
-observer.observe(document.querySelector('.zoneImagefooter1'))
-document.querySelectorAll('.textRight2').forEach(el => observer.observe(el));
+// Observer chaque texte
+textopacity.forEach(el => observer.observe(el));
+
+
+// ----------------------------
+// Sélection des éléments
+// ----------------------------
+const amazon = document.querySelector('.amazon');
+const disney = document.querySelector('.disney');
+const fx = document.querySelector('.fx');
+const imageParalax = document.querySelector('.imageChange');
+
+const textRightElements = document.querySelectorAll('.textRight2');
+
+console.log(footerImage)
+
+// ----------------------------
+// Fonction pour remettre l'image initiale
+// ----------------------------
+const resetImage = () => {
+    imageParalax.src = "images/n3.png"; // Image par défaut
+};
+
+// ----------------------------
+// Hover pour changer les images
+// ----------------------------
+amazon.addEventListener("mouseenter", () => imageParalax.src = "images/n4.png");
+disney.addEventListener("mouseenter", () => imageParalax.src = "images/n5.png");
+fx.addEventListener("mouseenter", () => imageParalax.src = "images/n8.png");
+
+// Retour à l'image initiale au mouseleave
+amazon.addEventListener("mouseleave", resetImage);
+disney.addEventListener("mouseleave", resetImage);
+fx.addEventListener("mouseleave", resetImage);
+
+// ----------------------------
+// IntersectionObserver pour les animations
+// ----------------------------
+
+
+

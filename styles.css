@@ -187,7 +187,7 @@ text-decoration: none;
 .zoneImagefooter1 {
   height: 300px;
   width: 220px;
-  opacity: 0;
+  opacity: 1;
   /* animation: opacityAppear linear;
   animation-timeline: view();
 animation-range: entry 0; */
@@ -443,5 +443,10 @@ transform: translateY(0px);
  }
  .textRight2 h1{
   font-size: 18px;
+ }
+ .zoneImagefooter1{
+  width:100px;
+  height: 100px;
+
  }
 }
