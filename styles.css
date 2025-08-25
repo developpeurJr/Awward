@@ -402,3 +402,46 @@ transform: translateY(0px);
     opacity: 1;
   }
 }
+
+@media (max-width: 480px) {
+
+ .titreWatson p{
+  font-size: 75px;
+ }
+.titreWatson{
+  padding: 0;
+}
+ .losAngeles{
+  font-size: 30px;
+ }
+ .Textzonephrase{
+  font-size: 30px;
+ }
+ .cube1Image{
+  width: 30px;
+  height: 40px;
+ }
+  .cube2Image{
+  width: 50px;
+  height: 40px;
+ }
+ .leftTitle{
+  margin: 0;
+  padding: 0;
+ }
+ .navbar h1{
+  font-size: 12px;
+ }
+ .textRight2{
+  font-size: 10px;
+ }
+ .footer2pageRight{
+  font-size: 12px;
+ }
+ .footer1pageLeft p{
+  width: 100px;
+ }
+ .textRight2 h1{
+  font-size: 18px;
+ }
+}

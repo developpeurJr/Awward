@@ -176,3 +176,28 @@ font-size: 20px;
     transform: translateY(-110px);
   }
 }
+
+@media (max-width: 480px) {
+.leftnav2{
+    font-size: 11px;
+}
+.rightnav2{
+    font-size: 11px;
+}
+.zonecenter3text h1{
+    font-size: 30px;
+}
+.zonecenter2text h1{
+    font-size: 30px;
+}
+.containSwitch{
+    height: 34px;
+}
+.zonecenter3text{
+    left: 10%;
+}
+.paralaxZone img{
+    width: 300px;
+    height: 200px;
+}
+}
